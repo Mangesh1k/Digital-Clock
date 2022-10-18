@@ -4,9 +4,9 @@ const secondEl = document.getElementById("seconds");
 const ampmEl = document.getElementById("ampm");
 
 function updateclcok(){
-    let h = new Date().getHours()
-    let m = new Date().getMinutes()
-    let s = new Date().getSeconds()
+    let h = new Date().getHours();
+    let m = new Date().getMinutes();
+    let s = new Date().getSeconds();
     let ampm = "AM"
     if(h > 12){
         h = h - 12
@@ -19,7 +19,7 @@ function updateclcok(){
     hourEl.innerText = h ;
     minuteEl.innerText = m;
     secondEl.innerText = s;
-    ampmEl.innerText = ampm;
+    ampmEl, (innerText = ampm);
     setTimeout(()=>{
 updateclcok()
     }, 1000)
