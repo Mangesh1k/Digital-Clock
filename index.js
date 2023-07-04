@@ -19,7 +19,7 @@ function updateclcok(){
     hourEl.innerText = h ;
     minuteEl.innerText = m;
     secondEl.innerText = s;
-    ampmEl, (innerText = ampm);
+    ampmEl.innerText = ampm;
     setTimeout(()=>{
 updateclcok()
     }, 1000)
